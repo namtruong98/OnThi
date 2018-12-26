@@ -71,7 +71,7 @@ public class UpdateActivity extends AppCompatActivity
             public void onClick(View v) {
                 String name = edtName.getText().toString().trim();
                 String price = edtPrice.getText().toString().trim();
-                int price_1 = Integer.parseInt(price);
+                float price_1 = Float.parseFloat(price);
 
                 if (name.isEmpty()){
                     edtName.setError("Empty Name");
