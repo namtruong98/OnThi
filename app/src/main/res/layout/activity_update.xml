@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/ed_ud_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="Name"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/ed_ud_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:hint="Price"
+        app:layout_constraintStart_toStartOf="@+id/ed_ud_name"
+        app:layout_constraintTop_toBottomOf="@+id/ed_ud_name"
+        tools:ignore="MissingConstraints" />
+    <Spinner
+        android:id="@+id/ed_ud_pro_id"
+        android:layout_width="210dp"
+        android:hint="ProID"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        app:layout_constraintStart_toStartOf="@+id/ed_ud_price"
+        app:layout_constraintTop_toBottomOf="@+id/ed_ud_price"
+        tools:ignore="MissingConstraints" />
+    <Button
+        android:id="@+id/btnSua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="40dp"
+        android:text="Update"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ed_ud_pro_id" />
+
+</android.support.constraint.ConstraintLayout>
